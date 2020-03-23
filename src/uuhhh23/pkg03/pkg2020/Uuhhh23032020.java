@@ -47,16 +47,25 @@ public class Uuhhh23032020
      */
     static void tremagg(int vett[], int n)
     {
-        int magg1=Integer.MIN_VALUE, magg2=0, magg3=0;
+        int temp=0, magg1=0, magg2=0, magg3=0;
         for(int i=0; i<n; i++)
         {
             if(vett[i]>magg1)
-            {
-                magg3=magg2;
-                magg2=magg1;
-                magg1=vett[i];
-            }
+                magg1 = vett[i];     
         }
+        for(int i=0; i<n; i++)
+        {
+            if(vett[i]<magg1)
+                if(vett[i]>magg2)
+                    magg2=vett[i];
+        }
+        for(int i=0; i<n; i++)
+        {
+            if(vett[i]<magg1)
+                if(vett[i]<magg2)
+                    if(vett[i]>magg3)
+                        magg3=vett[i];            
+        }        
         System.out.println("i 3 maggiori sono "+magg1 +" "+magg2+" "+magg3);
     }
     
