@@ -42,6 +42,9 @@ public class Uuhhh23032020
      * semplice funzione, individua il massimo e i tre precedenti ad esso
      * (basandosi sui massimi trovati in precedenza).
      * 
+     * è fatto male, ma l'altro metodo diventava molto più lungo 
+     * (puoi chiedere info a Tardi se vuoi saperne di più)
+     * 
      * @param vett
      * @param n 
      */
